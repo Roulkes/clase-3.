@@ -1,0 +1,37 @@
+print(" \"jose\" ")
+carrera = "ingenieria \n\ten \n\t\tcomputación"
+print(carrera)
+print("\u0065")
+print("\u0444")
+print("\u0620")
+print("\U00010057")
+print("\U0001F6DE")
+
+nombre = "Aarón"
+edad = 18
+casado = False
+estatura = 1.67
+""" 
+nombre=aaron
+     edad:18
+     esta casado:false
+     estatura en metros: 1.67          
+"""
+#1.- con comas (concatena haciendo un casting(conversión a string automatico))
+#agrega un espacio
+print(nombre, edad, casado, estatura)
+print("Nombre: "+nombre+"\n\tedad: "+str(edad)+"\n\testa casado: "+str(casado)+ "\n\tEstatura en metros: "+str(estatura))
+#2.- Pon el simbolo de suma (+), concatenación en crudo. 
+print(nombre +" " +str(edad) +" " +str(casado) +" " +str(estatura))
+
+#3.- Dando formato a la salida con format
+print("con la función format{}")
+print("Nombre: {0}\n\tEdad: {1}\n\tEsta casado: {2}\n\tEstatura en metros: {3}".format(nombre,edad,casado,estatura))
+
+#4.-Con el operador f comillas dobles ("")
+print("Con el operador f\" \"")
+print(f"Nombre: {nombre}\n\tEdad: {edad}\n\tEsta casado: {casado}\n\tEstatura en metros: {estatura}")
+
+#Como manejar el argumento end
+print(f"hola {nombre}", end="")
+print(", ¿como estas?", end="\n" )
